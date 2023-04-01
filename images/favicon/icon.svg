@@ -1,0 +1,13 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect fill=" none" height="600" width="600" y="0" x="0" id="svgEditorBackground"/>
+  <circle fill="#000000" stroke="black" stroke-width="1px" r="219.789978" cy="296.174" cx="293.544" id="e1_circle"/>
+  <text fill="#FFFFFF" font-family="Arial" font-size="18" stroke="#FFFFFF" font-weight="bold" transform="matrix(20.9124, 0, 0, 20.9124, -11046.7, -3808.39)" id="e2_texte" y="202.446993" x="535.693911">H</text>
+ </g>
+</svg>
