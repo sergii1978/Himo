@@ -17,7 +17,7 @@ html {
     font-style: normal;
     overflow-wrap: break-word;
   
-    color: #1B1A17;
+    color: #131313;
   }
   
   .container {
@@ -27,7 +27,7 @@ html {
     padding-left: 15px;
     padding-right: 15px;
   }
-  
+
   .visually-hidden {
     position: absolute;
     clip: rect(0, 0, 0, 0);
@@ -190,14 +190,17 @@ html {
   }
 
   .description__list {
+    margin: 25px auto 0 auto;
     display: flex;
+    flex-basis: 500px;
+    max-width: 500px;
     justify-content: space-between;
   }
 
   .description__item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
   }
@@ -251,4 +254,40 @@ html {
   .slick-dots button:hover, 
   .slick-active button {
     background: #FF4040;
+  }
+
+
+  /* section info */
+
+  .info {
+    margin-top: 150px;
+  }
+
+  .info__inner {
+    display: flex;
+  }
+
+  .info__img {
+    margin-right: 60px;
+    flex-basis: 570px;
+  }
+
+  .info__list {
+    display: flex;
+    flex-direction: column;
+    /* flex-basis: 490px; */
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .info__item-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
+
+  .info__list li:not(:last-child) h4 {
+    margin-bottom: 10px;
   }
