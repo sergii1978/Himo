@@ -189,19 +189,21 @@ html {
     max-width: 630px;
   }
 
-  .description__list {
-    margin: 25px auto 0 auto;
+  .bike__description-inner {
     display: flex;
-    flex-basis: 500px;
-    max-width: 500px;
     justify-content: space-between;
   }
 
-  .description__item {
+  .description__list {
+    margin: 25px auto 0 auto;
+
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: column-reverse;
+    flex-basis: 500px;
+    max-width: 500px;
+    justify-content: flex-end;
     align-items: center;
+
     text-align: center;
   }
 
@@ -270,18 +272,21 @@ html {
   .info__img {
     margin-right: 60px;
     flex-basis: 570px;
+    object-fit: cover;
   }
 
   .info__list {
-    display: flex;
-    flex-direction: column;
-    /* flex-basis: 490px; */
-    justify-content: space-between;
-    align-content: space-between;
+    flex-basis: 490px;
+  }
+
+  .info__item + .info__item {
+    padding-top: 50px;
   }
 
   .info__item-title {
+    max-width: 490px;
     margin: 0;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
@@ -291,3 +296,80 @@ html {
   .info__list li:not(:last-child) h4 {
     margin-bottom: 10px;
   }
+
+  .info__item-text {
+    max-width: 450px;
+    margin: 0;
+    padding-top: 10px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+/* section characteristics */
+.characteristics {
+  padding-top: 185px;
+}
+
+.characteristics__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.characteristics__table-inner {
+  display: flex;
+  flex-basis: 570px;
+  max-width: 570px;
+}
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+
+  text-align: start;
+}
+
+.table h3 {
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.table .head-cell {
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  text-align: start;
+
+  color: #FFFFFF;
+  background: #131313;
+}
+
+.table .row {
+  display: flex;
+}
+
+.table .cell {
+  width: 50%;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.characteristics__table tbody {
+  padding-bottom: 30px;
+}
+
+.characteristics__img {
+  flex-basis: 570px;
+  object-fit: cover;
+}
