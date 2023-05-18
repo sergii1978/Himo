@@ -378,8 +378,9 @@ line-height: 120%;
 .characteristics__img {
   margin-left: 60px;
 
-  
-
   flex-basis: 560px;
   object-fit: cover;
+  align-self: center;
 }
+
+/* section slider */
