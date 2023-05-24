@@ -310,6 +310,7 @@ a:focus, a:link, a:active {
 /* section characteristics */
 .characteristics {
 padding-top: 185px;
+padding-bottom: 150px;
 }
 
 .characteristics__inner {
@@ -384,3 +385,29 @@ line-height: 120%;
 }
 
 /* section slider */
+.slider__wrapper .slick-dots {
+  top: 0;
+  left: 0;
+}
+
+.slider__item {
+  padding-left: 50px;
+}
+
+/* section form */
+.price {
+  padding-bottom: 100px;
+}
+
+.form__btn {
+  border: none;
+  cursor: pointer;
+}
+
+/* main end */
+
+/* footer */
+footer {
+  background-color: #000000;
+  color: #ffffff;
+}
