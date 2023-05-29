@@ -126,13 +126,9 @@ a:focus, a:link, a:active {
 /* main */
 
 /* section bike */
-.bike__inner {
+.bike__wrapper {
   display: flex;
   justify-content: space-between;
-}
-
-.article__inner {
-  max-width: 420px;
 }
 
 .bike__title {
@@ -141,6 +137,10 @@ a:focus, a:link, a:active {
   line-height: 77px;
 
   text-transform: capitalize;
+}
+
+.article__inner {
+  max-width: 420px;
 }
 
 .bike__subtitle {
@@ -396,7 +396,120 @@ line-height: 120%;
 
 /* section form */
 .price {
+  padding-top: 50px;
   padding-bottom: 100px;
+}
+
+.price__inner {
+position: relative;
+
+  margin-bottom: 50px;
+}
+
+.form {
+  max-width: 420px;
+}
+
+.form__title {
+  margin: 0 0 40px 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.form__text {
+  margin-bottom: 30px;
+
+  max-width: 300px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.input__inner {
+  max-width: 420px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input-name, 
+.form__input-tel {
+  padding-bottom: 10px;
+
+  margin-bottom: 20px;
+
+  border: none;
+  border-bottom: 1px solid #131313;
+}
+
+.form__input-name::placeholder, 
+.form__input-tel::placeholder,
+.form__input-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #6F6F6F;
+  opacity: 0.5;
+}
+
+.form__input-text {
+  margin-bottom: 10px;
+}
+
+.form__label-box {
+  display: flex;
+}
+
+.form__label + .form__label {
+  margin-left: 23px;
+}
+
+.form__input-radio {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.form__input-radio:checked + .form__bike {
+  display: block;
+}
+
+.form__radio-style {
+  width: 80px;
+  height: 12px;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+}
+
+.form__radio-style--grey {
+  background: #6F6F6F;
+  border: 1px solid #6F6F6F;
+}
+
+.form__radio-style--white {
+  background: #FFFFFF;
+  border: 1px solid #6F6F6F;
+}
+
+.form__radio-style--red {
+  background: #FF4040;
+  border: 1px solid #6F6F6F;
+}
+
+.form__bike {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .form__btn {
