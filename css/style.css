@@ -481,6 +481,31 @@ position: relative;
   display: block;
 }
 
+.bike-price__inner {
+  width: 220px;
+  height: 112px;
+
+  position: absolute;
+  top: 21px;
+  left: -77px;
+  right: 0;
+
+  text-align: center;
+
+  background-image: url('../images/ellipse.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form__bike-price {
+  margin: 0 auto;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 112px;
+}
+
 .form__radio-style {
   width: 80px;
   height: 12px;
@@ -521,6 +546,39 @@ position: relative;
 
 /* footer */
 footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #000000;
   color: #ffffff;
+}
+
+footer a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-transform: lowercase;
+
+  color: #FFFFFF;
+}
+
+.legacy {
+  text-decoration: underline;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__social-item {
+  margin-left: 14px;
+  margin-right: 14px;
 }
