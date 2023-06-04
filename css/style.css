@@ -70,11 +70,11 @@ a:focus, a:link, a:active {
 /* Header */
 
 .header-nav {
+  margin-right: 70px;
+
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
 } 
 
 .menu-icon {
@@ -552,19 +552,23 @@ footer {
   color: #ffffff;
 }
 
-footer a {
+.legacy {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
 
   text-transform: lowercase;
+  text-decoration: underline;
 
   color: #FFFFFF;
 }
 
-.legacy {
-  text-decoration: underline;
+.legacy:hover {
+
+  color: #FF4040;
 }
+
+
 
 .footer__inner {
   display: flex;
@@ -581,4 +585,49 @@ footer a {
 .footer__social-item {
   margin-left: 14px;
   margin-right: 14px;
+}
+
+.socials__svg {
+  width: 28px;
+  height: 28px;
+
+  fill: #ffffff;
+  transition-duration: 500ms;
+  transition-property: fill;
+}
+
+.socials__svg:hover {
+  fill:  #FF4040;
+}
+
+.footer__contacts-item {
+  margin: 10px auto;
+
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+
+
+ .footer__contacts-item:nth-child(1) {
+  background-image: url("../images/svg/phone.svg");
+}
+
+.footer__contacts-item:nth-child(2) {
+  background-image: url("../images/svg/email.svg");
+}
+
+.footer__contact-link {
+  padding-left: 35px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;  
+  text-transform: lowercase;
+  text-align: start;
+
+  color: #FFFFFF;
+}
+
+.footer__contact-link:hover {
+  color: #FF4040;
 }

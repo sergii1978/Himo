@@ -347,7 +347,7 @@
                 <h2 class="visually-hidden">Заказ продукта</h2>
                 <div class="container">
                     <div class="price__inner">
-                        <form action="" class="order">
+                        <form action="#" class="order" method="post">
                             <h3 class="form__title">заказать</h3>
                             <p class="form__text">
                                 Если Вы хотите заказать велосипед, 
@@ -406,19 +406,23 @@
                     <a href="#" class="legacy">Политика конфиденциальности</a>
                     <ul class="footer__social">
                         <li class="footer__social-item">
-                            <a href="#" class="footer__social-link">
-                                <img class="footer__social-img" src="images/svg/instagram.svg" width="28" height="28" alt="инстаграм">
-                            </a>
+                            <a aria-label="Instagram" class="footer__social-link" href="#">
+								<svg class="socials__svg">
+									<use xLink:href="images/svg/sprite_social.svg#instagram"></use>
+								</svg>
+							</a>
                         </li>
                         <li class="footer__social-item">
-                            <a href="#" class="footer__social-link">
-                                <img class="footer__social-img" src="images/svg/facebook.svg" width="28" height="28" alt="инстаграм">
-                            </a>
+                            <a aria-label="Fcebook" class="footer__social-link" href="#">
+								<svg class="socials__svg">
+									<use xLink:href="images/svg/sprite_social.svg#facebook"></use>
+								</svg>
+							</a>
                         </li>
                     </ul>
                     <ul class="footer__contacts">
                         <li class="footer__contacts-item">
-                            <a href="tel:+38 050 677 77 77" class="footer__contact-link">
+                            <a href="tel:+380506777777" class="footer__contact-link">
                                 +38 050 677 77 77
                             </a>
                         </li>
